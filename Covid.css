@@ -1,0 +1,145 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+.title{
+	grid-area: title;
+	text-align: center;
+	font-size: 4em;
+	background-color:lime;
+	color: white;
+	margin: 0px;
+	padding: 0.75em;
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+	grid-template-areas:
+	'title title title title'
+	'. search button1 .'
+	'. button2 button3 .'
+	'Area NConfirm TConfirm Deaths';
+}
+
+.search{
+	grid-area: search;
+	font-size: 25px;
+	height: 44px;
+	margin: 20px 0px 0px 0px;
+}
+.button1{
+	grid-area: button1;
+	height: 50px;
+	margin: 20px 0px 0px 0px;
+}
+.button2{
+	grid-area: button2;
+	height: 50px;
+}
+.button3{
+	grid-area: button3;
+	height: 50px;
+}
+.area{
+	grid-area: Area;
+	font-size: 1.5em;
+}
+.newInfect{
+	grid-area: NConfirm;
+	font-size: 1.5em;
+}
+.total{
+	grid-area: TConfirm;
+	font-size: 1.5em;
+}
+.death{
+	grid-area: Deaths;
+	font-size: 1.5em;
+}
+	
+@media screen and (max-width: 1000px){
+	.grid{
+		grid-template-columns: repeat(2, 50%);
+		grid-template-areas:
+		'title title'
+		'search search'
+		'button1 button1'
+		'button2 button3'
+		'Area NConfirm'
+		'TConfirm Deaths';
+	}
+	.title{
+		font-size: 3em;
+	}
+	.search{
+		font-size: 3em;
+		height: 100px;
+		margin: 0px;
+	}
+	.button1{
+		margin: 0px;
+	}
+	.Area{
+		height: 200px;
+	}
+	.NConfirm{
+		height: 200px;
+	}
+	.TConfirm{
+		height: 200px;
+	}
+	.Deaths{
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.grid{
+		grid-template-columns: 100%;
+		grid-template-areas:
+		'title'
+		'search'
+		'button1'
+		'button1'
+		'button2'
+		'button3'
+		'Area'
+		'NConfirm'
+		'TConfirm'
+		'Deaths';
+	}
+	.title{
+		font-size: 1.5em;
+	}
+	.search{
+		height: 50px;
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 300px){
+	body{
+		font-size: 10px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

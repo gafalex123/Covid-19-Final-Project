@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link link rel="manifest" href="manifest.json">
+    <title>COVID-19 STATISTICS</title>
+    
+    <!-- include an external style sheet -->
+    <link rel="stylesheet" href="Covid.css">  
+    
+    <!-- include an external JavaScript file -->
+    <script src="apiexample.js"></script>
+  </head>
+  
+  <body class="grid">
+	<h1 class="title">COVID-19 STATISTICS</h1>
+	
+    <input type="text" id="search" class="search">
+	<button onclick="search()" class="button1">Search</button>
+	<button onclick="fetchData()" class="button2">All Countries</button>
+	<button onclick="fetchWorld()" class="button3">Global</button>
+	
+	
+	<div id="area" class="area">Area: none</div>
+	<div id="newInfect" class="newInfect">New Infected: none</div>
+	<div id="total" class="total">Total Confirmed: none</div>
+	<div id="death" class="death">Deaths: none</div>
+	
+	<div class="space"></div>
+	
+  </body>
+  
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
